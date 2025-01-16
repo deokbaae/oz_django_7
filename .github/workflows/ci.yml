@@ -12,7 +12,7 @@ jobs:
       DB_PORT: 3306
       DB_USER: root
       DB_PASSWORD: 1234
-      DB_DATABASE: oz_django
+      DB_DATABASE: oz_django_7
     steps:
       - name: Check out the codes
         uses: actions/checkout@v2
@@ -60,7 +60,3 @@ jobs:
       - name: Test python project
         run: |
           poetry run python manage.py test
-
-      - name: Test python project
-        run: |
-          poetry run python manage.py runserver
